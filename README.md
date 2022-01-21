@@ -4,15 +4,25 @@ A  similarity  measure  is  pro-posed  here  to  improve  the  performance  of  
 [Arnab Kumar Roy and Tanmay Basu. Postimpact Similarity: A Similarity Measure for EffectiveGrouping of Unlabelled Text Using Spectral Clustering. Knowledge and Information Systems (KAIS), Springer, 2022](https://www.springer.com/journal/10115/).
 
 ## Prerequisites
-[NumPy](https://numpy.org/install/), [Python 3](https://www.python.org/downloads/), [Scikit-Learn](https://scikit-learn.org/0.16/install.html)
+[NumPy](https://numpy.org/install/), Scipy](https://pypi.org/project/scipy/), [Python 3](https://www.python.org/downloads/), [Scikit-Learn](https://scikit-learn.org/0.16/install.html)
 
-## How to run the framework?
+## How to run the method?
 
-Will be updated soon
+The method is implemented in `PostimpClust.py`. Run the following lines to execute the method on a set of data samples to get the clusters: 
+
+```
+clt=PostimpClust(alpha = 0.025,beta=0.3)
+predicted_cluster_labels = clt.clustering(X,no_of_clusters)
+```
+
+Here `X` is the term-document matrix of a given text data or the data-feature matrix of any other data and `X` is a numeric matrix and has shapes '[n_samples, n_features]'. `alpha` and `beta`are the thresholds to compute the postimpact similarity score. Specific values of `alpha` and `beta` can be given (as shown above), if it is required. Otherwise, by default `alpha` and `beta` are automatically computed by the method. 
+
+An example code to execute `PostimpClust.py` is uploaded as `run_PostimpClust.py`. The results that are reported in the paper can be obtained by running `get_PostimpClust_paper_results.py`
+
 
 ## Contact
 
-For any further query, comment or suggestion, you may reach out to me at welcometanmay@gmail.com
+For any further query, comment or suggestion, you may reach out to me at welcometanmay@gmail.com or Arnab Roy at roy.arnab387@gmail.com
 
 ## Citation
 ```
