@@ -12,10 +12,10 @@ The method is implemented in `PostimpClust.py`. Run the following lines to execu
 
 ```
 clt=PostimpClust(alpha = 0.025,beta=0.3)
-predicted_cluster_labels = clt.clustering(X,no_of_clusters)
+predicted_cluster_labels = clt.clustering(X,k)
 ```
 
-Here `X` is the term-document matrix of a given text data or the data-feature matrix of any other data and `X` is a numeric matrix and has shapes '[n_samples, n_features]'. `alpha` and `beta`are the thresholds to compute the postimpact similarity score. Specific values of `alpha` and `beta` can be given (as shown above), if it is required. Otherwise, by default `alpha` and `beta` are automatically computed by the method. 
+Here `X` is the term-document matrix of a given text data or the data-feature matrix of any other data and `X` is a numeric matrix and has shapes '[n_samples, n_features]'. `k` is the number of desired clusters of the given data. `alpha` and `beta`are the thresholds to compute the postimpact similarity score. Specific values of `alpha` and `beta` can be given (as shown above), if it is required. Otherwise, by default `alpha` and `beta` are automatically computed by the method. 
 
 An example code to execute `PostimpClust.py` is uploaded as `run_PostimpClust.py`. The results that are reported in the paper can be obtained by running `get_PostimpClust_paper_results.py`
 
