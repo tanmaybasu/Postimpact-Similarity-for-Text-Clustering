@@ -4,7 +4,7 @@ A  similarity  measure  is  pro-posed  here  to  improve  the  performance  of  
 [Arnab Kumar Roy and Tanmay Basu. Postimpact Similarity: A Similarity Measure for EffectiveGrouping of Unlabelled Text Using Spectral Clustering. Knowledge and Information Systems (KAIS), Springer, 2022](https://www.springer.com/journal/10115/).
 
 ## Prerequisites
-[NumPy](https://numpy.org/install/), Scipy](https://pypi.org/project/scipy/), [Python 3](https://www.python.org/downloads/), [Scikit-Learn](https://scikit-learn.org/0.16/install.html)
+[NumPy](https://numpy.org/install/), [Scipy](https://pypi.org/project/scipy/), [Python 3](https://www.python.org/downloads/), [Scikit-Learn](https://scikit-learn.org/0.16/install.html)
 
 ## How to run the method?
 
